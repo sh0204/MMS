@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" language="java" %>
+<%@ page import = "java.io.PrintWriter" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,6 +15,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
+	<%
+		String userID = null;
+		if (session.getAttribute("userID")!=null){
+			userID = (String)session.getAttribute("userID");
+		}
+	
+	%>
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="navbar-header"> <!-- 홈페이지의 로고 -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,7 +33,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
         <ul class="navbar-nav me-auto">
-            <li class="nav-item">
+            <li class="active">
                 <a class="nav-link" href="main.jsp">HOME</a>
             </li>
             <li class="nav-item">
@@ -42,27 +51,6 @@
         </ul>
     </div>
 </nav>
-<!-- Modal HTML -->
-<div class="modal-dialog modal-login">
-    <div class="modal-content">
-        <div class="modal-header">
-            <h4 class="modal-title">LOGIN</h4>
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        </div>
-        <div class="modal-body">
-            <form action="loginAction.jsp" method="post">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="ID" name="userID">
-                </div>
-                <div class="form-group">
-                    <input type="password" class="form-control" placeholder="Password" name="userPassword">
-                </div>
-                <div class="form-group">
-                    <input type="submit" class="btn btn-primary btn-block btn-lg" value="OK">
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
+
 </body>
 </html>

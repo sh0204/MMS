@@ -46,16 +46,25 @@
 <div class="modal-dialog modal-login">
     <div class="modal-content">
         <div class="modal-header">
-            <h4 class="modal-title">LOGIN</h4>
+            <h4 class="modal-title">JOIN</h4>
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
         </div>
         <div class="modal-body">
-            <form action="loginAction.jsp" method="post">
+            <form action="joinAction.jsp" method="post">
                 <div class="form-group">
                     <input type="text" class="form-control" placeholder="ID" name="userID">
                 </div>
                 <div class="form-group">
                     <input type="password" class="form-control" placeholder="Password" name="userPassword">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="User Name " name="userName">
+                </div>
+                <div class="form-group">
+                    <input type="date" class="form-control" placeholder="Birth" name="userBirth">
+                </div>
+                <div class="form-group">
+                    <input type="tel" class="form-control" placeholder="Tel" name="userNum">
                 </div>
                 <div class="form-group">
                     <input type="submit" class="btn btn-primary btn-block btn-lg" value="OK">
