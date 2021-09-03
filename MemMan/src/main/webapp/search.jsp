@@ -1,4 +1,3 @@
-
 <%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" language="java" %>
 <%@ page import = "java.io.PrintWriter" %>
 <%@ page import="java.util.*" %>
@@ -56,12 +55,6 @@
         </ul>
     </div>
 </nav>
-
-	<form method="post" action="search.jsp">
-        이름 : <input type="text" name="name">
-        <input type="submit" value="조회하기"><br><br>
-    </form>
-    
 	<table border=1 style="width:800px;align:center">
     <tr style="background-color:#E4CEF2; text-align:center;">
         <th style="text-align:center;">아이디</th>

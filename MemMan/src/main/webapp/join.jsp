@@ -36,7 +36,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="logoutAction.jsp">로그아웃</a>
             </li>
-            <li class="nav-item">
+            <li class="active">
                 <a class="nav-link" href="join.jsp">회원가입</a>
             </li>
         </ul>

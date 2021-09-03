@@ -30,7 +30,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="Mem.jsp">조회</a>
             </li>
-            <li class="nav-item">
+            <li class="active">
                 <a class="nav-link" href="login.jsp">로그인</a>
             </li>
             <li class="nav-item">
