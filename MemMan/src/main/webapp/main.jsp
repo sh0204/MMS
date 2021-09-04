@@ -22,13 +22,9 @@
 		}
 	
 	%>
-
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="navbar-header"> <!-- 홈페이지의 로고 -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class ="navbar-brand" href="main.jsp">회원관리 프로그램</a>
+                <a class ="navbar-brand" href="main.jsp">회원관리 프로그램</a>
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
@@ -39,18 +35,44 @@
             <li class="nav-item">
                 <a class="nav-link" href="Mem.jsp">조회</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="login.jsp">로그인</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="logoutAction.jsp">로그아웃</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="join.jsp">회원가입</a>
-            </li>
         </ul>
+        <%
+
+                if(userID == null)
+                {
+         %>
+         <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                <a href="#" class = "dropdown-toggle"
+                    data-toggle="dropdown" role ="button" aria-haspopup="true"
+                    aria-expanded="false">CONNECT</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="login.jsp">LOGIN</a></li>
+                        <li><a href="join.jsp">SIGN UP</a></li>                    
+                    </ul>
+                </li>
+            </ul>
+            <%
+            // 로그인이 되어있는 사람만 볼수 있는 화면
+                } else {
+            %>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                <a href="#" class = "dropdown-toggle"
+                    data-toggle="dropdown" role ="button" aria-haspopup="true"
+                    aria-expanded="false">STATUS</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="logoutAction.jsp">LOGOUT</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <%
+                }
+            %>
     </div>
 </nav>
+
+
 
 </body>
 </html>
