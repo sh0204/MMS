@@ -28,25 +28,7 @@
                 <a class="nav-link" href="Mem.jsp">조회</a>
             </li>
         </ul>
-        <ul class="navbar-nav me-auto navbar-right">
-        	
-            
-            <li class="dropdown">
-          		 <a href="#" class="dropdown-toggle" data-toggle="dropdown" 
-          		 role="button" aria-haspopup="true" data-bs-target="#navbarColor03" aria-controls="navbarColor03" 
-          		 aria-expanded="false">Connect</a>
-          		<ul class="dropdown-menu">
-            		<li class="nav-link"><a class="nav-link" href="login.jsp">로그인</a>
-            		</li>
-            		<li class="nav-item">
-                	<a class="nav-link" href="logoutAction.jsp">로그아웃</a>
-           			</li>
-           			<li class="active">
-                	<a class="nav-link" href="join.jsp">회원가입</a>
-            		</li>
-          		</ul>
-        	</li>
-        </ul>
+       
     </div>
 </nav>
 <!-- Modal HTML -->

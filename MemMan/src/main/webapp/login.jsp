@@ -8,6 +8,7 @@
     <title>회원관리</title>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link rel="stylesheet" href="loginstyle.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -28,25 +29,7 @@
                 <a class="nav-link" href="Mem.jsp">조회</a>
             </li>
         </ul>
-        <ul class="navbar-nav me-auto navbar-right">
-        	
-            
-            <li class="dropdown">
-          		 <a href="#" class="dropdown-toggle" data-toggle="dropdown" 
-          		 role="button" aria-haspopup="true" data-bs-target="#navbarColor03" aria-controls="navbarColor03" 
-          		 aria-expanded="false">Connect</a>
-          		<ul class="dropdown-menu">
-            		<li class="active"><a class="nav-link" href="login.jsp">로그인</a>
-            		</li>
-            		<li class="nav-item">
-                	<a class="nav-link" href="logoutAction.jsp">로그아웃</a>
-           			</li>
-           			<li class="nav-item">
-                	<a class="nav-link" href="join.jsp">회원가입</a>
-            		</li>
-          		</ul>
-        	</li>
-        </ul>
+       
     </div>
 </nav>
 <!-- Modal HTML -->
