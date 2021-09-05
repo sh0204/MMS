@@ -1,6 +1,6 @@
 # 🌐회원관리 프로그램
 ## 회원 정보 관리 웹 애플리케이션
-### CUK 소프트웨어공학프로젝트
+### CUK 소프트웨어공학 프로젝트
 ![Build Status](https://img.shields.io/badge/-JAVA-F26D85)
 
 
