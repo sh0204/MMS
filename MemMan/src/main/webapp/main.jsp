@@ -66,6 +66,7 @@
                     data-toggle="dropdown" role ="button" aria-haspopup="true"
                     aria-expanded="false">STATUS</a>
                     <ul class="dropdown-menu">
+                     	<li><a href="userUpdate.jsp">UPDATE</a></li>
                         <li><a href="logoutAction.jsp">LOGOUT</a></li>
                     </ul>
                 </li>

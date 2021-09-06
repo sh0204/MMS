@@ -1,5 +1,6 @@
 package user;
 
+import java.beans.Statement;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -9,6 +10,7 @@ public class UserDAO {
 
 	private Connection conn;
 	private PreparedStatement pstmt;
+	private java.sql.Statement stmt;
 	private ResultSet rs;
 	
 	public UserDAO() {
@@ -66,4 +68,42 @@ public class UserDAO {
         }
         return -1; // 데이터베이스 오류
     }
+	
+	public User getUser(String userID) {
+		String SQL = "SELECT * FROM user WHERE userID='"+userID+"'";
+		try {
+			stmt = conn.createStatement();
+			System.out.println("getUser:execute_before" + SQL);
+			rs= stmt.executeQuery(SQL);
+			User user = new User();
+			if(rs.next()) {
+			user.setUserID(rs.getString(1));
+			System.out.println("getUser:user.getUserID" + user.getUserID());
+			user.setUserPassword(rs.getNString(2));
+			user.setUserName(rs.getString(3));
+			user.setUserBirth(rs.getString(4));
+			user.setUserNum(rs.getString(5));
+			return user;
+			}
+		}catch(Exception e){
+			System.out.println("exeption");
+			e.printStackTrace();
+		}
+		System.out.println("return: -1");
+		return null;
+	}
+	public int modify(User user) {
+		String SQL = "UPDATE user SET userID='" + user.getUserID() + "'"+", userPassword='" + user.getUserPassword() + "'"+", userName='" + user.getUserName() + "'"
+																								+", userBirth='" + user.getUserBirth() + "'"+", userNum="+ "'" + user.getUserNum() + "' WHERE userID='"+ user.getUserID() +"'";
+		try {
+			stmt = conn.createStatement();
+			System.out.println("executeupdate_before");
+			return stmt.executeUpdate(SQL);
+		}catch(Exception e){
+			System.out.println("exeption");
+			e.printStackTrace();
+		}
+		System.out.println("return: -1");
+		return -1;
+	} 
 }
