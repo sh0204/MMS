@@ -28,6 +28,15 @@
 
 <body>
 	<%
+	if (session.getAttribute("userID") == null) {
+		PrintWriter script = response.getWriter();
+		script.println("<script>");
+		script.println("alert('로그인을 하세요.')");
+		script.println("location.href='login.jsp'");
+		script.println("</script>");
+	}
+	%>
+	<% 
 	    request.setCharacterEncoding("utf-8");
 	    String name_1 = request.getParameter("name");
 	    User memberVO = new User();
@@ -50,7 +59,17 @@
                 <a class="nav-link" href="Mem.jsp">조회</a>
             </li>
         </ul>
-        
+        <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                <a href="#" class = "dropdown-toggle"
+                    data-toggle="dropdown" role ="button" aria-haspopup="true"
+                    aria-expanded="false">STATUS</a>
+                    <ul class="dropdown-menu">
+                     	<li><a href="userUpdate.jsp">UPDATE</a></li>
+                        <li><a href="logoutAction.jsp">LOGOUT</a></li>
+                    </ul>
+                </li>
+            </ul>
     </div>
 </nav>
 

@@ -37,7 +37,7 @@
     <div class="modal-content">
         <div class="modal-header">
             <h4 class="modal-title">LOGIN</h4>
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><a href="main.jsp">×</button></a>
         </div>
         <div class="modal-body">
             <form action="loginAction.jsp" method="post">
