@@ -10,6 +10,7 @@
 - Show member list
 - Find member by name
 - Web application
+- change the information
 
 ## Usage
 Use JSP & Tomcat on Eclipse <br>
@@ -19,6 +20,7 @@ Design by bootstap
 ![image](https://user-images.githubusercontent.com/73006274/132123608-42acb741-45fe-48fb-aba6-d77ec980fb23.png)
 ![image](https://user-images.githubusercontent.com/73006274/132123632-addb79c3-f33a-4c1c-95e2-bb452ab301d2.png)<br>
 ![image](https://user-images.githubusercontent.com/73006274/132123644-6efffaf9-bd44-49f8-8a74-328bab00df35.png)<br>
+![image](https://user-images.githubusercontent.com/73006274/132227139-bb87ce2d-dff7-4c83-8ac3-c8000845ca54.png)<br>
 ![image](https://user-images.githubusercontent.com/73006274/132123655-700be890-ead8-402c-b63a-67c6aceb2f62.png)
 
 
